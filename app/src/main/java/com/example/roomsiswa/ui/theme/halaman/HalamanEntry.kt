@@ -24,7 +24,18 @@ fun EntrySiswaBody(
     onSiswavalueChange: (DetailSiswa) -> Unit,
     onSaveClick: () ->,
     modifier: Modifier = Modifier
-){}
+){
+    Column(
+        verticalArrangement = Arrangement.spacedBy(dimensionResource(id = R.dimen.padding_large)),
+        modifier = modifier.padding(dimensionResource(id = R.dimen.padding_medium))
+    ){
+        FormInputSiswa(
+            detailSiswa = uiStateSiswa.detailSiswa,
+            onValueChange = onSiswavalueChange,
+            modifier = Modifier.fillMaxWidth()
+        )
+    }
+}
 @OptIn(ExperimentalMaterial3Api::class)
 @Composable
 fun FormInputSiswa(
