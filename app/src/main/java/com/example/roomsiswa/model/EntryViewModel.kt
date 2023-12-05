@@ -35,7 +35,7 @@ class EntryViewModel(private val repositorySiswa: RepositorySiswa): ViewModel(){
  */
 data class UIStateSiswa(
     val detailSiswa: DetailSiswa = DetailSiswa(),
-    val inEntryValid: Boolean = false
+    val isEntryValid: Boolean = false
 )
 data class DetailSiswa(
     val id: Int = 0,
