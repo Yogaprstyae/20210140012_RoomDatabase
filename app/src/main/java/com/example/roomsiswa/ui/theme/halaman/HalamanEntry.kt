@@ -16,7 +16,15 @@ import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.text.input.KeyboardType
 import com.example.roomsiswa.R
 import com.example.roomsiswa.model.DetailSiswa
+import com.example.roomsiswa.model.UIStateSiswa
 
+@Composable
+fun EntrySiswaBody(
+    uiStateSiswa: UIStateSiswa,
+    onSiswavalueChange: (DetailSiswa) -> Unit,
+    onSaveClick: () ->,
+    modifier: Modifier = Modifier
+){}
 @OptIn(ExperimentalMaterial3Api::class)
 @Composable
 fun FormInputSiswa(
